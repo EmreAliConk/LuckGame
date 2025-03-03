@@ -7,15 +7,23 @@
 
 import UIKit
 
-class CardSelectionVc: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class CardSelectionVc: UIViewController           {
+    
+    @IBOutlet var cardImageView: UIView!
+    @IBOutlet var buttons      : [UIView]!
+    
+    override func viewDidLoad()                   {
+        super.viewDidLoad    ()
+         
+        for button in buttons                     {
+            button.layer.cornerRadius = 8
+        }
 
        
     }
     
-
+    @IBAction func stopButtunTapped(_ sender: Any) {
+    }
     
 
 }

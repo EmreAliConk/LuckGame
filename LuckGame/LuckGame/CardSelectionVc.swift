@@ -7,23 +7,43 @@
 
 import UIKit
 
-class CardSelectionVc: UIViewController           {
+class CardSelectionVc: UIViewController {
     
-    @IBOutlet var cardImageView: UIView!
+    @IBOutlet var cardImageView: UIImageView!
+    
     @IBOutlet var buttons      : [UIView]!
     
-    override func viewDidLoad()                   {
-        super.viewDidLoad    ()
-         
-        for button in buttons                     {
+    var cards : [UIImage] = Card.allValues
+    
+    var timer : Timer!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad ()
+        startTimer()
+        for button in buttons {
             button.layer.cornerRadius = 8
         }
+        func startTimer() {
+            timer = Timer.scheduledTimer(timeInterval: 0.5, target:self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
+        }
+       
+            
+        }
+    @objc func showRandomImage(){
+        cardImageView.image = cards.randomElement() ?? UIImage(named: "KH")
 
        
     }
     
     @IBAction func stopButtunTapped(_ sender: Any) {
     }
+    
+    @IBAction func restartButtonTapped(_ sender: Any) {
+    }
+    @IBAction func rulesButtonTapped(_ sender: Any) {
+    }
+    
     
 
 }

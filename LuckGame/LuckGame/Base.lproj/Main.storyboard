@@ -56,6 +56,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nh-Jx-QEh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-Um-9zc">
                                 <rect key="frame" x="211.66666666666663" y="646" width="115" height="50"/>
@@ -73,6 +76,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cq4-mq-Sxe"/>
                                     <segue destination="zqd-2H-alF" kind="presentation" id="GMH-U7-V2s"/>
                                 </connections>
                             </button>
@@ -91,7 +95,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardImageView" destination="Ly8-a5-zFb" id="P1X-Lk-lKc"/>
+                        <outlet property="cardImageView" destination="Ly8-a5-zFb" id="qxO-A6-Hag"/>
                         <outletCollection property="buttons" destination="YMW-h2-nNW" collectionClass="NSMutableArray" id="vUt-80-7aH"/>
                         <outletCollection property="buttons" destination="CYd-Um-9zc" collectionClass="NSMutableArray" id="m75-6d-BYP"/>
                         <outletCollection property="buttons" destination="vRN-U5-AbZ" collectionClass="NSMutableArray" id="kQm-15-iMh"/>
@@ -158,7 +162,7 @@ J = 11, Q = 12, K = 13, A =14 </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKr-Yn-ydZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887.78625954198469" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="784" y="-2"/>
         </scene>
     </scenes>
     <resources>
@@ -167,10 +171,10 @@ J = 11, Q = 12, K = 13, A =14 </string>
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

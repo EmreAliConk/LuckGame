@@ -38,7 +38,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="stopButtunTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWz-TO-hQK"/>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCP-jG-Q2J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMW-h2-nNW">
@@ -57,7 +57,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nh-Jx-QEh"/>
+                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GwJ-GL-VJE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-Um-9zc">
@@ -76,7 +76,6 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cq4-mq-Sxe"/>
                                     <segue destination="zqd-2H-alF" kind="presentation" id="GMH-U7-V2s"/>
                                 </connections>
                             </button>
@@ -96,9 +95,9 @@
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="Ly8-a5-zFb" id="qxO-A6-Hag"/>
-                        <outletCollection property="buttons" destination="YMW-h2-nNW" collectionClass="NSMutableArray" id="vUt-80-7aH"/>
-                        <outletCollection property="buttons" destination="CYd-Um-9zc" collectionClass="NSMutableArray" id="m75-6d-BYP"/>
-                        <outletCollection property="buttons" destination="vRN-U5-AbZ" collectionClass="NSMutableArray" id="kQm-15-iMh"/>
+                        <outletCollection property="buttons" destination="vRN-U5-AbZ" collectionClass="NSMutableArray" id="A2d-JN-wTA"/>
+                        <outletCollection property="buttons" destination="YMW-h2-nNW" collectionClass="NSMutableArray" id="w4G-GV-NAl"/>
+                        <outletCollection property="buttons" destination="CYd-Um-9zc" collectionClass="NSMutableArray" id="2D4-eG-mzX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
